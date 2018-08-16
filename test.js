@@ -11,7 +11,7 @@ test('readar', t => {
     t.deepEqual(readar('_file_'), ['111', '222', '333']);
 });
 
-test.after(t => {
+test.after.always(t => {
     fs.rmdirSync('_dir_');
     fs.unlinkSync('_file_');
 });
