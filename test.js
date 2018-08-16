@@ -9,6 +9,10 @@ test.before(t => {
 
 test('readar', t => {
     t.deepEqual(readar('_file_'), ['111', '222', '333']);
+    const ed = t.throws(() => readar('_dir_'));
+    t.is(ed.code, 'EISDIR');
+    const eb = t.throws(() => readar('_bad_'));
+    t.is(eb.code, 'ENOENT');
 });
 
 test.after.always(t => {
