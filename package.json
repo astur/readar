@@ -1,8 +1,7 @@
 {
-  "private": true,
   "name": "readar",
   "version": "0.0.0",
-  "description": "",
+  "description": "Read text file to array of lines",
   "main": "index.js",
   "author": "astur <astur@yandex.ru> (http://kozlov.am/)",
   "scripts": {
@@ -22,7 +21,13 @@
     "nyc": "^12.0.2"
   },
   "keywords": [
-    "readar"
+    "file",
+    "array",
+    "readline",
+    "readlines",
+    "fs",
+    "read",
+    "config"
   ],
   "license": "MIT"
 }
