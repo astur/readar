@@ -1,6 +1,6 @@
 {
   "name": "readar",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Read text file to array of lines",
   "main": "index.js",
   "author": "astur <astur@yandex.ru> (http://kozlov.am/)",
