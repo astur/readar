@@ -1,9 +1,13 @@
 # readar
 
-readar description here
+Read text file to array of lines. Easy, sync, utf8 only, no configs required.
 
 [![Build Status][travis-image]][travis-url]
 [![NPM version][npm-image]][npm-url]
+
+## Why?
+
+Because `fs` is too low-level for such kind of tasks.
 
 ## Install
 
@@ -15,6 +19,10 @@ npm i readar
 
 ```js
 const readar = require('readar');
+
+readar('path/to/some/file'); // ['line1', 'line2', 'line3']
+readar('path/to/some/dir'); // Error EISDIR: illegal operation on a directory, read
+readar('path/to/nonExistent/file'); // Error ENOENT: no such file or directory, open \'path/to/nonExistent/file\'
 ```
 
 ## License
